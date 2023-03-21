@@ -30,7 +30,24 @@
         </ul>
     </nav>
     <ul class="categories center">
-        <li class="categories_item"><a href="#" class="categories_link">Salon</a></li>
+        <li class="categories_item">
+            <a href="#" class="categories_link">Salon</a>
+
+            <ul class="categories_subcategory">
+                <li class="subcategory_item">
+                    <a href="#" class="categories_link">subcategory lvl1</a>
+                    <ul class="inner_categories">
+                        <li class="subcategory_item"><a href="#" class="categories_link">subcategory lvl2</a></li>
+                        <li class="subcategory_item"><a href="#" class="categories_link">subcategory lvl2</a></li>
+                    </ul></li>
+                <li class="subcategory_item">
+                    <a href="#" class="categories_link">subcategory lvl1</a>
+                    <ul class="inner_categories">
+                        <li class="subcategory_item"><a href="#" class="categories_link">subcategory lvl2</a></li>
+                        <li class="subcategory_item"><a href="#" class="categories_link">subcategory lvl2</a></li>
+                    </ul></li>
+            </ul>
+        </li>
         <li class="categories_item"><a href="#" class="categories_link">Barbershop</a></li>
         <li class="categories_item"><a href="#" class="categories_link">Manicure</a></li>
         <li class="categories_item"><a href="#" class="categories_link">Pedicure</a></li>
@@ -92,32 +109,24 @@
             <a href="#" class="btn">Buy</a>
         </article>
     </section>
-    <section class="center details">
-        <article class="details_card subscribe">
-            <div class="details_right">
-                <h3 class="details_title">
-                    Get bonuses and gifts
-                </h3>
-                <p class="details_desc">Every month we play
-                    $1000 for our clients</p>
-                <input class="input" type="email" name="email" placeholder="Enter your e-mail">
-            </div>
-            <div class="email_img">
-                <img src="img/email.png" alt="email">
-            </div>
+    <section class="center subscribe_and_stores">
+        <article class="subscribe_and_stores_item">
+            <h3 class="subscribe_and_stores_title">
+                Get bonuses and gifts
+            </h3>
+            <p class="subscribe_and_stores_text">Every month we play
+                $1000 for our clients</p>
+            <input class="input" required type="email" name="email" placeholder="Enter your e-mail">
+            <img src="img/email.png" class="subscribe_and_stores_img" alt="email">
         </article>
-        <article class="details_card stores">
-            <div class="details_right">
-                <h3 class="details_title">
-                    Visit us
-                </h3>
-                <p class="details_desc">Over 300 stores
-                    throughout the USA</p>
-                <a href="#" class="btn btn--outlined btn--white btn--narrow"> Store map </a>
-            </div>
-            <div class="truck_img">
-                <img src="img/truck.png" alt="truck">
-            </div>
+        <article class="subscribe_and_stores_item">
+            <h3 class="subscribe_and_stores_title">
+                Visit us
+            </h3>
+            <p class="subscribe_and_stores_text">Over 300 stores
+                throughout the USA</p>
+            <a href="#" class="btn btn--outlined btn--white btn--narrow"> Store map </a>
+            <img src="img/truck.png" class="subscribe_and_stores_img" alt="truck">
         </article>
     </section>
     <section class="center">
@@ -230,81 +239,86 @@
         </article>
     </section>
 </main>
-<footer>
-    <section class="footer center">
-        <article class="popular_items">
-            <div class="popular_items_card">
-                <h3 class="popular_items_title">
-                    Popular categories
-                </h3>
-                <ul class="popular_items_list">
-                    <li><a href="#" class="popular_items_link">Нozzles</a></li>
-                    <li><a href="#" class="popular_items_link">Tools</a></li>
-                    <li><a href="#" class="popular_items_link">Gel polishes</a></li>
-                    <li><a href="#" class="popular_items_link">Design</a></li>
-                    <li><a href="#" class="popular_items_link">Building</a></li>
-                    <li><a href="#" class="popular_items_link">Equipment</a></li>
-                </ul>
-            </div>
-            <div class=" popular_items_card">
-                <h3 class="popular_items_title">
-                    Popular categories
-                </h3>
-                <ul class="popular_items_list">
-                    <li><a href="#" class="popular_items_link">Нozzles</a></li>
-                    <li><a href="#" class="popular_items_link">Tools</a></li>
-                    <li><a href="#" class="popular_items_link">Gel polishes</a></li>
-                    <li><a href="#" class="popular_items_link">Design</a></li>
-                    <li><a href="#" class="popular_items_link">Building</a></li>
-                    <li><a href="#" class="popular_items_link">Equipment</a></li>
-                </ul>
-            </div>
-            <div class="popular_items_card">
-                <h3 class="popular_items_title">
-                    Popular categories
-                </h3>
-                <ul class="popular_items_list">
-                    <li><a href="#" class="popular_items_link">Нozzles</a></li>
-                    <li><a href="#" class="popular_items_link">Tools</a></li>
-                    <li><a href="#" class="popular_items_link">Gel polishes</a></li>
-                    <li><a href="#" class="popular_items_link">Design</a></li>
-                    <li><a href="#" class="popular_items_link">Building</a></li>
-                    <li><a href="#" class="popular_items_link">Equipment</a></li>
-                </ul>
-            </div>
-            <div class="popular_items_card">
-                <h3 class="popular_items_title">
-                    Popular categories
-                </h3>
-                <ul class="popular_items_list">
-                    <li><a href="#" class="popular_items_link">Нozzles</a></li>
-                    <li><a href="#" class="popular_items_link">Tools</a></li>
-                    <li><a href="#" class="popular_items_link">Gel polishes</a></li>
-                    <li><a href="#" class="popular_items_link">Design</a></li>
-                    <li><a href="#" class="popular_items_link">Building</a></li>
-                    <li><a href="#" class="popular_items_link">Equipment</a></li>
-                </ul>
-            </div>
-        </article>
+<footer class="footer">
+    <section class="center popular_items">
+        <div class="popular_items_card">
+            <h3 class="popular_items_title">
+                Popular categories
+            </h3>
+            <ul class="popular_items_list">
+                <li><a href="#" class="popular_items_link">Нozzles</a></li>
+                <li><a href="#" class="popular_items_link">Tools</a></li>
+                <li><a href="#" class="popular_items_link">Gel polishes</a></li>
+                <li><a href="#" class="popular_items_link">Design</a></li>
+                <li><a href="#" class="popular_items_link">Building</a></li>
+                <li><a href="#" class="popular_items_link">Equipment</a></li>
+            </ul>
+        </div>
+        <div class=" popular_items_card">
+            <h3 class="popular_items_title">
+                Popular categories
+            </h3>
+            <ul class="popular_items_list">
+                <li><a href="#" class="popular_items_link">Нozzles</a></li>
+                <li><a href="#" class="popular_items_link">Tools</a></li>
+                <li><a href="#" class="popular_items_link">Gel polishes</a></li>
+                <li><a href="#" class="popular_items_link">Design</a></li>
+                <li><a href="#" class="popular_items_link">Building</a></li>
+                <li><a href="#" class="popular_items_link">Equipment</a></li>
+            </ul>
+        </div>
+        <div class="popular_items_card">
+            <h3 class="popular_items_title">
+                Popular categories
+            </h3>
+            <ul class="popular_items_list">
+                <li><a href="#" class="popular_items_link">Нozzles</a></li>
+                <li><a href="#" class="popular_items_link">Tools</a></li>
+                <li><a href="#" class="popular_items_link">Gel polishes</a></li>
+                <li><a href="#" class="popular_items_link">Design</a></li>
+                <li><a href="#" class="popular_items_link">Building</a></li>
+                <li><a href="#" class="popular_items_link">Equipment</a></li>
+            </ul>
+        </div>
+        <div class="popular_items_card">
+            <h3 class="popular_items_title">
+                Popular categories
+            </h3>
+            <ul class="popular_items_list">
+                <li><a href="#" class="popular_items_link">Нozzles</a></li>
+                <li><a href="#" class="popular_items_link">Tools</a></li>
+                <li><a href="#" class="popular_items_link">Gel polishes</a></li>
+                <li><a href="#" class="popular_items_link">Design</a></li>
+                <li><a href="#" class="popular_items_link">Building</a></li>
+                <li><a href="#" class="popular_items_link">Equipment</a></li>
+            </ul>
+        </div>
     </section>
-    <section class="footer center social_media">
-        <a href="https://www.youtube.com/" class="social_media_logo" target="_blank">
-            <img src="img/youtube_logo.png" alt="youtube">
-        </a>
-        <a href="https://www.facebook.com/" class="social_media_logo" target="_blank">
-            <img src="img/facebook_logo.png" alt="facebook">
-        </a>
-        <a href="https://www.instagram.com/" class="social_media_logo" target="_blank">
-            <img src="img/instagram_logo.png" alt="instagram">
-        </a>
+    <section class="center footer_contacts">
+        <ul class="social_list">
+            <li>
+                <a href="https://www.youtube.com/" target="_blank">
+                <img src="img/youtube_logo.png" alt="youtube"></a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="img/facebook_logo.png" alt="facebook"></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="img/instagram_logo.png" alt="instagram"></a>
+            </li>
+        </ul>
         <a href="tel:12131234567" class="contact_phone">1 (213) 123-45-67</a>
         <button class="btn btn--outlined">
             Call back
         </button>
     </section>
-    <section class="center policy">
+    <section class="center footer_policy">
         <p>Best Store (c) 2019 All rights reserved. Online store of equipment for beauty salons</p>
-        <p>Privacy Policy</p>
+        <a href="#" class="footer_link">
+            Privacy Policy
+        </a>
     </section>
 </footer>
 </body>
